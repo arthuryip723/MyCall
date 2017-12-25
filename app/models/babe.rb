@@ -1,0 +1,2 @@
+class Babe < ApplicationRecord
+end
