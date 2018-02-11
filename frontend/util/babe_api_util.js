@@ -12,9 +12,10 @@ export const fetchBabe = id => (
   })
 );
 
-export const createBabe = babe => (
+export const createBabe = data => (
   $.ajax({
     method: 'POST',
     url: 'api/babes',
+    data
   })
 );
