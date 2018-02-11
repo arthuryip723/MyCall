@@ -21,9 +21,8 @@ class BabeShow extends React.Component {
 				<h1>Babe details:</h1>
 				<div>ID: {this.props.match.params.babeId}</div>
 				<br/>
-				<Link to="/babes">Go back</Link>
+				<Link to='/babes'>Go back</Link>
 			</div>
-
 		);
 	}
 }
