@@ -4,3 +4,10 @@ export const fetchBabes = () => (
     url: 'api/babes'
   })
 );
+
+export const fetchBabe = id => (
+	$.ajax({
+		method: 'GET',
+		url: `api/babes/${id}`
+	})
+);

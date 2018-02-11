@@ -16,11 +16,10 @@ class BabeIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchBabes()
+    this.props.fetchBabes();
   }
 
   render() {
-    // console.log('this.props:', this.props);
     return (
       <div>
         <h1>Babes:</h1>

@@ -1,14 +1,19 @@
 import { connect } from 'react-redux';
-// import { fetchBabes } from '../../actions/babe_actions';
+import { fetchBabe } from '../../actions/babe_actions';
 import { asArray } from '../../reducers/selectors';
 import BabeShow from './babe_show';
 
-const mapStateToProps = state => ({
-  babes: asArray(state.babes)
-});
+const mapStateToProps = (state, { match }) => {
+  const babeId = parseInt(match.params.babeId);
+  const babe = state.currentBabe;
+  return {
+  	babeId,
+  	babe
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
-  // fetchBabes: () => dispatch(fetchBabes())
+  fetchBabe: id => dispatch(fetchBabe(id))
 });
 
 export default connect(
