@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // const BabeIndex = ({ babes }) => (
 //   <div>
@@ -25,7 +25,7 @@ class BabeIndex extends React.Component {
       <div>
         <h1>Babes:</h1>
         <ul>
-          {this.props.babes.map((babe, idx) => <li key={idx}>{babe.name}</li>)}
+          {this.props.babes.map((babe, idx) => <li key={idx}><Link to={'/babes/' + babe.id}>{babe.name}</Link></li>)}
         </ul>
       </div>
     );
