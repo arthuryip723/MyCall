@@ -1,4 +1,4 @@
-import * as APIUtil from '../util/babe_api_util'
+import * as APIUtil from '../util/babe_api_util';
 
 export const RECEIVE_BABES = 'RECEIVE_BABES';
 export const RECEIVE_BABE = 'RECEIVE_BABE';
@@ -21,6 +21,12 @@ export const fetchBabes = () => dispatch => (
 
 export const fetchBabe = id => dispatch => (
   APIUtil.fetchBabe(id).then(babe => (
+    dispatch(receiveBabe(babe))
+  ))
+);
+
+export const createBabe = id => babe => (
+  APIUtil.createBabe(babe).then(babe => (
     dispatch(receiveBabe(babe))
   ))
 );

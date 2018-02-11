@@ -19,7 +19,7 @@ class BabeShow extends React.Component {
     return (
       <div>
         <h1>Babe details:</h1>
-        <div>ID: {this.props.babeId}</div>
+        <div>ID: {this.props.babe.id}</div>
         <div>Name: {this.props.babe.name}</div>
         <div>Age: {this.props.babe.age}</div>
         <br/>

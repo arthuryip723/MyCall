@@ -4,12 +4,13 @@ import { asArray } from '../../reducers/selectors';
 import BabeShow from './babe_show';
 
 const mapStateToProps = (state, { match }) => {
-  const babeId = parseInt(match.params.babeId);
+  // const babeId = parseInt(match.params.babeId);
   const babe = state.currentBabe;
-  return {
-    babeId,
-    babe
-  };
+  // return {
+  //   babeId,
+  //   babe
+  // };
+  return {babe};
 };
 
 const mapDispatchToProps = dispatch => ({
