@@ -4,7 +4,7 @@ import thunk from 'redux-thunk';
 import babesReducer from '../reducers/babes_reducer';
 
 // TODO Should fix this later.
-const configureStore = (preloadedState = { babes: [], currentBabe: {name: null, age: 0} }) => (
+const configureStore = (preloadedState = { babes: [], currentBabe: {} }) => (
   createStore(
     babesReducer,
     preloadedState,
