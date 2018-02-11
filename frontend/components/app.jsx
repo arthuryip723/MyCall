@@ -7,13 +7,13 @@ import BabeFormContainer from './babe/babe_form_container';
 
 // TODO Need to add other routes here.
 const App = () => (
-	<Switch>
-		<Route exact path="/" component={BabeIndexContainer} />
-		<Route exact path="/babes" component={BabeIndexContainer} />
-		<Route exact path="/babes/new" component={BabeFormContainer} />
-		<Route exact path="/babes/:babeId" component={BabeShowContainer} />
-		<Route component={BabeIndexContainer} />
-	</Switch>
+  <Switch>
+    <Route exact path="/" component={BabeIndexContainer} />
+    <Route exact path="/babes" component={BabeIndexContainer} />
+    <Route exact path="/babes/new" component={BabeFormContainer} />
+    <Route exact path="/babes/:babeId" component={BabeShowContainer} />
+    <Route component={BabeIndexContainer} />
+  </Switch>
 );
 
 export default App;

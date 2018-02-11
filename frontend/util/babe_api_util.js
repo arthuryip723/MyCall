@@ -6,8 +6,8 @@ export const fetchBabes = () => (
 );
 
 export const fetchBabe = id => (
-	$.ajax({
-		method: 'GET',
-		url: `api/babes/${id}`
-	})
+  $.ajax({
+    method: 'GET',
+    url: `api/babes/${id}`
+  })
 );

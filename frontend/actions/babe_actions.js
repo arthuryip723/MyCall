@@ -21,6 +21,6 @@ export const fetchBabes = () => dispatch => (
 
 export const fetchBabe = id => dispatch => (
   APIUtil.fetchBabe(id).then(babe => (
-  	dispatch(receiveBabe(babe))
+    dispatch(receiveBabe(babe))
   ))
 );

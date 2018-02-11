@@ -7,26 +7,26 @@ import { Link } from 'react-router-dom';
 
 // Babe class
 class BabeShow extends React.Component {
-	constructor(props) {
-		super(props);
-	}
+  constructor(props) {
+    super(props);
+  }
 
-	componentDidMount() {
-		this.props.fetchBabe(this.props.match.params.babeId);
-	}
+  componentDidMount() {
+    this.props.fetchBabe(this.props.match.params.babeId);
+  }
 
-	render() {
-		return (
-			<div>
-				<h1>Babe details:</h1>
-				<div>ID: {this.props.babeId}</div>
-				<div>Name: {this.props.babe.name}</div>
-				<div>Age: {this.props.babe.age}</div>
-				<br/>
-				<Link to='/babes'>Go back</Link>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div>
+        <h1>Babe details:</h1>
+        <div>ID: {this.props.babeId}</div>
+        <div>Name: {this.props.babe.name}</div>
+        <div>Age: {this.props.babe.age}</div>
+        <br/>
+        <Link to='/babes'>Go back</Link>
+      </div>
+    );
+  }
 }
 
 export default BabeShow;

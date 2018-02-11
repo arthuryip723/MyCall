@@ -7,8 +7,8 @@ const mapStateToProps = (state, { match }) => {
   const babeId = parseInt(match.params.babeId);
   const babe = state.currentBabe;
   return {
-  	babeId,
-  	babe
+    babeId,
+    babe
   };
 };
 
