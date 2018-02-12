@@ -13,7 +13,6 @@ export const fetchBabe = id => (
 );
 
 export const createBabe = data => {
-  console.log('data:', data);
   return $.ajax({
     method: 'POST',
     url: 'api/babes',
