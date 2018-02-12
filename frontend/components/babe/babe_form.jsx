@@ -15,6 +15,7 @@ class BabeForm extends React.Component {
     e.preventDefault();
     const babe = Object.assign({}, this.state);
     // QUESTION: Why do I receive an action object here?
+    // Looks like I will get the object in dispatch() in babe_actions.js
     this.props.createBabe({babe})
       .then(data => this.props.history.push(`/babes/${data.babe.id}`));
   }
