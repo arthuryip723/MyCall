@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
+import { createBabe } from '../../actions/babe_actions';
 import BabeForm from './babe_form';
 
 const mapStateToProps = (state) => {
   const babe = state.currentBabe;
-  return babe;
+  return {babe};
 };
 
 const mapDispatchToProps = dispatch => ({

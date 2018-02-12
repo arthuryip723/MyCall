@@ -11,4 +11,8 @@ class Api::BabesController < ApplicationController
     @babe = Babe.create!(babe_params)
     render :show
   end
+
+  def babe_params
+    params.require(:babe).permit(:name, :age)
+  end
 end

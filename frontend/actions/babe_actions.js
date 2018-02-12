@@ -25,7 +25,7 @@ export const fetchBabe = id => dispatch => (
   ))
 );
 
-export const createBabe = id => babe => (
+export const createBabe = babe => dispatch => (
   APIUtil.createBabe(babe).then(babe => (
     dispatch(receiveBabe(babe))
   ))
